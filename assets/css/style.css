@@ -1,0 +1,127 @@
+body {
+  margin: 0 auto;
+  background-color: #ECCBF7;
+}
+
+button {
+  width: auto;
+  height: 50px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-family: sans-serif, serif;
+  font-size: 24px;
+  margin: 20px;
+  margin-right: 30px;
+  border-radius: 10px;
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+  -webkit-animation-name: thumb;
+  -webkit-animation-duration: 200ms;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-iteration-count: 2;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes thumb {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+#rpsPic {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+  display: block;
+}
+
+#wrapper {
+  margin-left: 250px;
+  margin-top: 50px;
+}
+
+#counter {
+  display: inline-block;
+}
+
+#wins,
+#ties,
+#losses {
+  border: 1px solid black;
+  float: left;
+  margin: 10px;
+  padding: 15px;
+  list-style-type: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.num {
+  float: left;
+  margin: 10px;
+  margin-top: 15px;
+  list-style-type: none;
+  font-size: 22px;
+  background-color: black;
+  color: white;
+  width: 10px;
+  padding: 10px;
+}
+
+#playText {
+  margin-left: 50px;
+  font-family: sans-serif, serif;
+  font-size: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 385px;
+  padding-left: 10px;
+}
+
+#whoWon {
+  margin-left: 50px;
+  font-family: sans-serif, serif;
+  font-size: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 385px;
+  padding-left: 10px;
+  text-align: center;
+  background-color:black;
+  color:white;
+}
+
+#humDisplay {
+  height: 200px;
+  width: 200px;
+  float: left;
+  position: absolute;
+  margin-left: 20px;
+}
+
+#compDisplay {
+  height: 200px;
+  width: 200px;
+  float: right;
+  position: absolute;
+  margin-left: 780px;
+}
+
+#humDisplay,
+#compDisplay {
+  font-family: sans-serif, serif;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 350px;
+}

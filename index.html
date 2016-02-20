@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/javascript.js"></script>
+    <title>Rock Paper Scissors!</title>
+  </head>
+
+  <body>
+    <div class="displays" id="humDisplay">
+    </div>
+    <div class="displays" id="compDisplay">
+    </div>
+    <div id="wrapper">
+      <div id="whoWon">
+        ROCK PAPER SCISSORS
+      </div>
+
+      <div id="tallies">
+        <ul id="counter">
+          <li id="wins">Wins: </li>
+          <li class="num"><span id="numWins">0</span></li>
+          <li id="ties">Ties: </li>
+          <li class="num" id="numTies">0</li>
+          <li id="losses">Losses: </li>
+          <li class="num" id="numLosses">0</li>
+        </ul>
+        <div id="rps">
+          <img id="rpsPic" src="https://2.bp.blogspot.com/-U0JPIsc3d6c/U8SwI33zFaI/AAAAAAAAAVA/G1mYZYtpnbM/s1600/rock_scissors_paper1.png" />
+        </div>
+        <div id="rpsButtons">
+          <button id="rock">ROCK</button>
+          <button id="paper">PAPER</button>
+          <button id="scissors">SCICCORS</button>
+        </div>
+        <p id="playText">
+          CHOOSE YOUR WEAPON!
+        </p>
+      </div>
+    </div>
+  </body>
+
+</html>
+
+<!--1rock > 3sciccors
+1paper < 3sciccors
+3sciccors > 2paper
+2paper > 1rock..>
