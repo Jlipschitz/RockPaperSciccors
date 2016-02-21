@@ -66,6 +66,17 @@ $(document).ready(function() {
     $('#compDisplay').html("SAME WEAPON");
   }
 
+  //animate text
+  function animate() {
+  var div = $(".displays");
+    div.animate({
+      fontSize: '2.2em'
+    }, "medium");
+    div.animate({
+      fontSize: '2.0em'
+    }, "medium");
+}
+
   // rock = 0, paper = 1, scissors = 2;
   function game(choice1, choice2) {
 
@@ -82,33 +93,15 @@ $(document).ready(function() {
   // call our game function when user clicks and selects
   $("#rock").on("click", function() {
     game(0, Math.floor(Math.random() * 3));
-    var div = $(".displays");
-    div.animate({
-      fontSize: '2.2em'
-    }, "medium");
-    div.animate({
-      fontSize: '2.0em'
-    }, "medium");
+    animate();
   });
   $("#paper").on("click", function() {
     game(1, Math.floor(Math.random() * 3));
-    var div = $(".displays");
-    div.animate({
-      fontSize: '2.2em'
-    }, "medium");
-    div.animate({
-      fontSize: '2.0em'
-    }, "medium");
+    animate();
   });
   $("#scissors").on("click", function() {
     game(2, Math.floor(Math.random() * 3));
-    var div = $(".displays");
-    div.animate({
-      fontSize: '2.2em'
-    }, "medium");
-    div.animate({
-      fontSize: '2.0em'
-    }, "medium");
+    animate();
   });
 
 });
